@@ -16,7 +16,7 @@ import {
   Shield,
 } from "lucide-react";
 
-export function HiringPage() {
+export function PartnerPage() {
   const location = useLocation();
   const savedScrollY = location.state?.scrollY;
 
@@ -382,7 +382,7 @@ export function HiringPage() {
         </motion.section>
 
         {/* Compensation */}
-        <motion.section
+        {/* <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -450,7 +450,7 @@ export function HiringPage() {
           <p className="text-gray-600 text-sm mt-6 italic">
             Transparency is mandatory. Exploitation is not tolerated.
           </p>
-        </motion.section>
+        </motion.section> */}
 
         {/* Who Partner is NOT for */}
         <motion.section

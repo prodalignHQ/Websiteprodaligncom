@@ -85,7 +85,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/hiring"
+                  to="/partner"
                   className="text-gray-600 hover:text-[#FC7802] transition-colors"
                 >
                   Prodalign Partner

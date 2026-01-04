@@ -6,7 +6,7 @@ import { HomePage } from './components/HomePage';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
 import { StudioPage } from './components/StudioPage';
-import { HiringPage } from './components/HiringPage';
+import { PartnerPage } from './components/PartnerPage';
 import { BoardPage } from './components/BoardPage';
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/studio" element={<StudioPage />} />
-            <Route path="/hiring" element={<HiringPage />} />
+            <Route path="/partner" element={<PartnerPage />} />
             <Route path="/board" element={<BoardPage />} />
           </Routes>
         </main>

@@ -335,8 +335,8 @@ export function HomePage() {
             </div>
 
             <Link
-              to="/hiring"
-              onClick={handleUseCaseClick("/hiring")}
+              to="/partner"
+              onClick={handleUseCaseClick("/partner")}
               className="inline-flex items-center gap-2 text-[#FC7802] hover:gap-3 transition-all"
             >
               Partner with Prodalign
