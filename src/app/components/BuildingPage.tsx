@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Compass, Shield, Users, TrendingUp, CheckCircle, XCircle } from 'lucide-react';
 
 export function BuildingPage() {
   const location = useLocation();
@@ -31,243 +31,481 @@ export function BuildingPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-20"
+          className="mb-16"
         >
-          <h1 className="mb-6 text-[36px]">Prodalign Board</h1>
-          <p className="text-gray-600 max-w-3xl">
-            The apex layer of the Prodalign ecosystem. Selective, aspirational, and designed for individuals showing strong vision and founder potential.
+          <h1 className="mb-4 text-4xl">Prodalign Board</h1>
+          <p className="text-xl text-gray-500 mb-6">
+            Guidance, structure, and experienced perspective for first-time founders.
           </p>
+          
+          <div className="max-w-3xl">
+            <p className="text-gray-700">
+              Board is designed for people who want to build companies thoughtfully—not rush into execution without clarity.
+            </p>
+          </div>
         </motion.div>
 
-        {/* What Board Is */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">What Prodalign Board Is</h2>
-          <div className="space-y-6 text-gray-600">
-            <p>
-              Prodalign Board is a structured support system for individuals who want to build companies—but need guidance, accountability, and experienced perspectives before launching.
-            </p>
-            <p>
-              This isn't an accelerator. There's no Demo Day, no pitch competition, no race to fundraising. Instead, Board provides long-term advisory support as you refine your idea, test assumptions, and build the foundation for something sustainable.
-            </p>
-            <p>
-              Participation is selective. Not everyone from Build moves to Board—and that's intentional. This layer is for people who've demonstrated vision, judgment, and the discipline to execute over time.
-            </p>
-          </div>
-        </motion.section>
-
-        {/* Eligibility */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 bg-gray-50 p-8 md:p-12 rounded-lg"
-        >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">Eligibility Requirements</h2>
-          <p className="text-gray-600 mb-6">
-            To be considered for Prodalign Board, you need at least one of the following:
-          </p>
-          <div className="space-y-4">
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
-              <p className="text-gray-600">
-                <strong className="text-gray-900">A business idea</strong> — Something you've been thinking about and want to refine through structured feedback.
-              </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
-              <p className="text-gray-600">
-                <strong className="text-gray-900">A draft business plan</strong> — Early thinking on market, model, or go-to-market strategy.
-              </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
-              <p className="text-gray-600">
-                <strong className="text-gray-900">Market research</strong> — Evidence that you've explored a space and see an opportunity.
-              </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
-              <p className="text-gray-600">
-                <strong className="text-gray-900">Openness to work on a Prodalign-assigned problem</strong> — Willingness to build around a challenge we've identified and believe has potential.
-              </p>
-            </div>
-          </div>
-          <p className="text-gray-600 mt-6 pt-6 border-t border-gray-200">
-            Prodalign assists in refining ideas before board formation. If your concept needs work, we'll help you sharpen it—or redirect you toward something more viable.
-          </p>
-        </motion.section>
-
-        {/* Board Structure */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 border-l-4 border-[#FC7802] pl-8"
-        >
-          <h2 className="text-3xl md:text-4xl mb-6 text-[32px]">How Board Structure Works</h2>
-          <div className="space-y-6 text-gray-600">
-            <div>
-              <h3 className="text-xl mb-2 text-gray-900">Board Composition</h3>
-              <p>
-                Each venture is supported by <strong className="text-gray-900">2–6 board members</strong>—experienced operators, founders, or domain experts who provide strategic guidance.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl mb-2 text-gray-900">Equity Allocation</h3>
-              <p>
-                Each board member receives <strong className="text-gray-900">1.5% equity</strong> in the venture. Prodalign retains <strong className="text-gray-900">0.75% equity</strong> to sustain the ecosystem and align incentives long-term.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl mb-2 text-gray-900">Duration & Meetings</h3>
-              <p>
-                Board access lasts for <strong className="text-gray-900">12 months</strong>, with up to <strong className="text-gray-900">6 board meetings</strong> during that period. Meetings are intentional, not frequent—focused on high-leverage decisions, not day-to-day operations.
-              </p>
-            </div>
-          </div>
-          <p className="text-gray-600 mt-6 pt-6 border-t border-gray-200">
-            This structure ensures board members are genuinely invested in your success—not just offering advice for free or charging consulting fees.
-          </p>
-        </motion.section>
-
-        {/* What Board Members Do */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">What Board Members Provide</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Strategic Direction</h3>
-              <p className="text-gray-600">
-                Help you think through big decisions—pivots, hiring, fundraising, market positioning—without rushing or forcing outcomes.
-              </p>
-            </div>
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Pattern Recognition</h3>
-              <p className="text-gray-600">
-                Share what they've seen work (and fail) in similar contexts. Save you months of trial and error.
-              </p>
-            </div>
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Network Access</h3>
-              <p className="text-gray-600">
-                Introductions to customers, partners, investors, or operators who can unlock doors you didn't know existed.
-              </p>
-            </div>
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Honest Feedback</h3>
-              <p className="text-gray-600">
-                Tell you when something isn't working, when to double down, or when to redirect. No sugarcoating, no ego protection.
-              </p>
-            </div>
-          </div>
-        </motion.section>
-
-        {/* What Board Isn't */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 bg-gray-50 p-8 md:p-12 rounded-lg"
-        >
-          <h2 className="text-3xl md:text-4xl mb-6 text-[32px]">What Board Doesn't Promise</h2>
-          <ul className="space-y-3 text-gray-600">
-            <li>• No guaranteed funding or investor introductions</li>
-            <li>• No instant success or "fast-track to unicorn" narrative</li>
-            <li>• No hands-on execution—board members advise, you build</li>
-            <li>• No replacement for doing the hard work yourself</li>
-          </ul>
-          <p className="text-gray-600 mt-6 pt-6 border-t border-gray-200">
-            Prodalign Board is serious, long-term, and grounded in reality. If you're chasing hype or shortcuts, this isn't the place.
-          </p>
-        </motion.section>
-
-        {/* Who This Is For */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">Who Board Is For</h2>
-          <div className="space-y-4 text-gray-600">
-            <p>
-              Prodalign Board is for people who want to build something meaningful—not just start a company for the sake of it.
-            </p>
-            <p>
-              You're willing to spend time refining your thinking. You understand that judgment, discipline, and pattern recognition take years to develop. You want guidance, but you're not looking for someone to build it for you.
-            </p>
-            <p>
-              You might not have all the answers yet. But you're asking the right questions—and you're willing to work through uncertainty with structure and support.
-            </p>
-          </div>
-        </motion.section>
-
-        {/* Progression to Board */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 border-l-4 border-gray-200 pl-8"
-        >
-          <h2 className="text-3xl md:text-4xl mb-6 text-[32px]">Path to Board Eligibility</h2>
-          <div className="space-y-4 text-gray-600">
-            <p>
-              Most people who join Board have gone through Build and Partner first. They've demonstrated execution, learned how teams work, and shown the capacity to think beyond tasks.
-            </p>
-            <p>
-              But that's not a strict requirement. If you have a strong idea, clear thinking, and the discipline to execute—you can apply directly. Prodalign will assess readiness and help you determine if Board is the right next step.
-            </p>
-          </div>
-        </motion.section>
-
-        {/* This Takes Time */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 bg-[#FC7802]/5 border border-[#FC7802]/20 p-8 md:p-12 rounded-lg"
-        >
-          <h2 className="text-3xl md:text-4xl mb-6 text-[32px]">This Takes Time</h2>
-          <p className="text-gray-600 mb-4">
-            Building a company isn't a sprint. Most successful founders spend years refining their craft before something works. Board doesn't accelerate time—it provides structure so you use that time well.
-          </p>
-          <p className="text-gray-600">
-            Expect slow, intentional progress. Expect honest conversations about what's working and what isn't. Expect to question your assumptions and rethink your approach.
-          </p>
-          <p className="text-gray-900 mt-6 pt-6 border-t border-[#FC7802]/20 font-semibold">
-            If you're ready for that—Board exists to support you.
-          </p>
-        </motion.section>
-
-        {/* CTA */}
+        {/* Quick Overview Cards */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center border-t border-gray-200 pt-12"
+          className="grid md:grid-cols-2 gap-6 mb-24"
         >
-          <h2 className="text-3xl mb-6">Ready to Explore Board?</h2>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Whether you're exploring, hiring, or building—we'd love to talk.
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="text-4xl mb-4">🧭</div>
+            <h3 className="text-xl mb-3">Advisory, not execution</h3>
+            <p className="text-gray-600">
+              Board connects you with experienced professionals who guide your thinking—not do the work for you.
+            </p>
+          </div>
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="text-4xl mb-4">🎯</div>
+            <h3 className="text-xl mb-3">Long-term focus</h3>
+            <p className="text-gray-600">
+              No accelerator timelines or demo days. Board helps you build something sustainable over time.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* What is Board? */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24"
+        >
+          <h2 className="text-4xl mb-8">What is Board?</h2>
+          
+          <div className="space-y-4 text-gray-700 mb-8">
+            <p>
+              Prodalign Board is a long-term advisory program for young entrepreneurs who are early in their journey and need guidance before building.
+            </p>
+            <p>
+              Many first-time founders jump straight into solutions—often without validating whether the problem is real, whether people will pay, or whether a technical solution even makes sense.
+            </p>
+            <p>
+              Board exists to slow this down in the right way.
+            </p>
+          </div>
+
+          <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10">
+            <p className="text-gray-700 mb-4">
+              You get access to experienced industry professionals who form a dedicated board around your idea. Their role is not to execute for you, but to help you:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+                <span className="text-gray-700">Understand the problem space deeply</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+                <span className="text-gray-700">Question assumptions early</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+                <span className="text-gray-700">Avoid expensive and irreversible mistakes</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+                <span className="text-gray-700">Build something sustainable over time</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-[#FC7802]/5 border-l-4 border-[#FC7802] p-6 rounded-r-lg">
+            <p className="text-gray-700">
+              This is not an accelerator.<br />
+              There's no demo day, no pitch competition, and no rush to fundraising.
+            </p>
+          </div>
+        </motion.section>
+
+        {/* Who is Board for? */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24"
+        >
+          <h2 className="text-4xl mb-8">Who is Board for?</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                  <CheckCircle className="w-6 h-6 text-[#FC7802]" />
+                </div>
+                <h3 className="text-xl">Eligibility</h3>
+              </div>
+              <div className="space-y-3 text-gray-700">
+                <div className="flex items-start gap-2">
+                  <span className="text-[#FC7802] mt-1">•</span>
+                  <span>Students or first-time founders under 30</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-[#FC7802] mt-1">•</span>
+                  <span>A business idea + basic market research + early business plan</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-[#FC7802] mt-1">•</span>
+                  <span>Willing to pivot if a better direction emerges</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-[#FC7802] mt-1">•</span>
+                  <span>Comfortable working through uncertainty over time</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-lg border-2 border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-gray-600" />
+                </div>
+                <h3 className="text-xl">Not sure yet?</h3>
+              </div>
+              <p className="text-gray-700 mb-4">
+                If you're unsure whether you want to be a founder yet, <Link to="/training" className="text-[#FC7802] hover:underline font-medium">Prodalign Build</Link> is often the right place to start.
+              </p>
+              <div className="pt-4 border-t border-gray-300">
+                <p className="text-sm text-gray-600">
+                  Need help with a business plan? Reach out to Prodalign for <strong className="text-gray-900">45 minutes of guidance</strong> at no cost.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* What Board Offers */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24"
+        >
+          <h2 className="text-4xl mb-8">What Board offers</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white border-2 border-gray-200 p-8 rounded-lg">
+              <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Experienced Guidance</h3>
+              <p className="text-gray-600">
+                Access to operators and founders who've seen similar problems before.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-8 rounded-lg">
+              <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center mb-4">
+                <Compass className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Structured Thinking</h3>
+              <p className="text-gray-600">
+                Help refining problem statements, business models, and early strategy.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-8 rounded-lg">
+              <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center mb-4">
+                <CheckCircle className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Accountability</h3>
+              <p className="text-gray-600">
+                Regular checkpoints that force reflection, not rushed decisions.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-8 rounded-lg">
+              <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Network Access</h3>
+              <p className="text-gray-600">
+                Introductions to people, tools, and services when relevant—not by default.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* What Board Takes */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
+        >
+          <h2 className="text-4xl mb-10">What Board takes</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl mb-4 text-gray-900">What you commit</h3>
+              <div className="space-y-3 text-gray-700">
+                <div className="flex items-start gap-2">
+                  <span className="text-gray-400 mt-1">→</span>
+                  <span>Long-term focus on one problem space</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-gray-400 mt-1">→</span>
+                  <span>~60–90 minutes of work per day</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-gray-400 mt-1">→</span>
+                  <span>Openness to feedback and course correction</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-gray-400 mt-1">→</span>
+                  <span>Serious intent to pursue the idea if it gains traction</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl mb-4 text-gray-900">What Board takes</h3>
+              <div className="space-y-4">
+                <div className="bg-[#FC7802]/5 p-4 rounded-lg">
+                  <div className="text-sm text-gray-600 mb-1">One-time commitment fee</div>
+                  <div className="text-2xl text-gray-900">₹7,500</div>
+                  <div className="text-sm text-gray-600 mt-1 italic">Refunded upon company incorporation</div>
+                </div>
+                
+                <div className="pt-4 border-t border-gray-200">
+                  <div className="text-sm text-gray-600 mb-3">Equity alignment:</div>
+                  <div className="space-y-2 text-gray-700">
+                    <div className="flex justify-between">
+                      <span>Per board member</span>
+                      <span className="font-medium">2%</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Held by Prodalign</span>
+                      <span className="font-medium">0.5%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mt-6 pt-6 border-t border-gray-200 italic">
+            Board size is flexible (1–6 advisors). For most ideas, 1–3 advisors are sufficient.
           </p>
+        </motion.section>
+
+        {/* How Board Works */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24"
+        >
+          <h2 className="text-4xl mb-12">How Board works</h2>
+          
+          <div className="space-y-6">
+            {/* Step 1 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802] text-white flex items-center justify-center text-xl">
+                  1
+                </div>
+              </div>
+              <div className="flex-1 pt-1">
+                <h3 className="text-xl mb-2">Initial Conversation</h3>
+                <p className="text-gray-600">
+                  Intro call to understand your idea, motivation, and readiness.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802] text-white flex items-center justify-center text-xl">
+                  2
+                </div>
+              </div>
+              <div className="flex-1 pt-1">
+                <h3 className="text-xl mb-2">Refinement Phase</h3>
+                <p className="text-gray-600">
+                  A Prodalign mentor helps sharpen your problem statement, business thinking, and pitch.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802] text-white flex items-center justify-center text-xl">
+                  3
+                </div>
+              </div>
+              <div className="flex-1 pt-1">
+                <h3 className="text-xl mb-2">Final Review</h3>
+                <p className="text-gray-600">
+                  A structured pitch with documentation and a working roadmap.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802] text-white flex items-center justify-center text-xl">
+                  4
+                </div>
+              </div>
+              <div className="flex-1 pt-1">
+                <h3 className="text-xl mb-2">Board Formation</h3>
+                <p className="text-gray-600">
+                  Prodalign curates and onboards advisors aligned to your domain and challenges.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 5 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802] text-white flex items-center justify-center text-xl">
+                  5
+                </div>
+              </div>
+              <div className="flex-1 pt-1 bg-[#FC7802]/5 p-6 rounded-lg -ml-6 pl-12">
+                <h3 className="text-xl mb-2">Guided Execution</h3>
+                <p className="text-gray-600">
+                  You work independently while receiving structured guidance over time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Timeline / Pathways */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24 bg-white border-2 border-gray-200 p-10 md:p-12 rounded-lg"
+        >
+          <h2 className="text-4xl mb-8">Possible pathways</h2>
+          
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">Early mentor alignment</div>
+                <div className="text-sm text-gray-600">Weeks 1–4</div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">Roadmap and validation phase</div>
+                <div className="text-sm text-gray-600">Months 2–4</div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">Board introduction</div>
+                <div className="text-sm text-gray-600">Month 4–5</div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">Periodic board meetings</div>
+                <div className="text-sm text-gray-600">Over ~18 months</div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">Company incorporation</div>
+                <div className="text-sm text-gray-600">When readiness emerges (often mid-way)</div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-gray-600 mt-8 pt-8 border-t border-gray-200 italic">
+            Pivots are expected. Incorporation is not rushed.
+          </p>
+        </motion.section>
+
+        {/* Who Board is NOT for */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24"
+        >
+          <div className="border-2 border-gray-300 p-10 md:p-12 rounded-lg">
+            <h2 className="text-4xl mb-8">Who Board is not for</h2>
+            
+            <div className="space-y-6">
+              <p className="text-gray-700">
+                Prodalign Board may not be the right fit if:
+              </p>
+              
+              <div className="space-y-3 text-gray-600">
+                <div className="flex items-start gap-3">
+                  <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                  <span>You want the founder title more than the work</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                  <span>You need constant certainty and clear answers</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                  <span>You struggle staying with one problem long-term</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                  <span>You're looking for shortcuts, hype, or quick funding</span>
+                </div>
+              </div>
+
+              <p className="text-gray-700 pt-6 border-t border-gray-200">
+                Board rewards patience, obsession with a domain, and the ability to think clearly over time.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Closing CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center border-t-2 border-gray-200 pt-16"
+        >
+          <div className="max-w-3xl mx-auto mb-10">
+            <h2 className="text-4xl mb-6">Building a company takes years—not weeks.</h2>
+            <p className="text-xl text-gray-600 mb-4">
+              Board doesn't compress time.
+            </p>
+            <p className="text-xl text-gray-600">
+              It gives you structure so you don't waste it.
+            </p>
+          </div>
+          
+          <p className="text-gray-700 mb-8">
+            If you're ready to think deeply, work patiently, and build with intent—we're open to a conversation.
+          </p>
+          
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-[#FC7802] text-white rounded-md hover:bg-[#E56D02] transition-all hover:gap-3"

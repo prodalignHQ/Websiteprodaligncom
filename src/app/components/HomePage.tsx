@@ -270,7 +270,7 @@ export function HomePage() {
             <div className="mb-4">
               <span className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
                 <span className="w-2 h-2 rounded-full bg-[#FC7802] shadow-[0_0_4px_rgba(252,120,2,0.6)]" />
-                1st-Time Founders, &lt; 28y
+                1st-Time Founders, &lt; 30y
               </span>
             </div>
             <div className="flex items-start gap-6 mb-6">
@@ -296,13 +296,10 @@ export function HomePage() {
                   Eligibility
                 </h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• A business idea, OR</li>
-                  <li>• A draft business plan, OR</li>
-                  <li>• Market research, OR</li>
-                  <li>
-                    • Openness to work on a Prodalign-assigned
-                    problem
-                  </li>
+                  <li>• Students or first-time founders under 30</li>
+                  <li>• A business idea + basic market research + early business plan</li>
+                  <li>• Willing to pivot if a better direction emerges</li>
+                  <li>• Comfortable working through uncertainty over time</li>
                 </ul>
               </div>
               <div>
@@ -310,12 +307,10 @@ export function HomePage() {
                   Structure
                 </h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• 2–6 board members per venture</li>
-                  <li>• Each member receives 1.5% equity</li>
-                  <li>• Prodalign retains 0.75% equity</li>
-                  <li>
-                    • 12-month access, up to 6 board meetings
-                  </li>
+                  <li>• 1–6 board members per venture</li>
+                  <li>• Each member receives 2% equity</li>
+                  <li>• Prodalign retains 0.5% equity</li>
+                  <li>• ~18 months of advisory support</li>
                 </ul>
               </div>
             </div>
@@ -355,9 +350,8 @@ export function HomePage() {
                   Prodalign Partner
                 </h3>
                 <p className="text-gray-600 text-lg mb-6">
-                  Partner provides real-world problem statements
-                  from companies. This is where learning meets
-                  practice.
+                  A structured way for companies to collaborate with student
+                  teams—guided, mentored, and low risk.
                 </p>
               </div>
             </div>
@@ -365,37 +359,33 @@ export function HomePage() {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <h4 className="font-semibold mb-2">
-                  How It Works
+                  What It Is
                 </h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>
-                    • Companies submit non-critical or
-                    exploratory tasks
+                    • Not outsourcing—mentored collaboration
                   </li>
                   <li>
-                    • Teams work with weekly or bi-weekly
-                    check-ins
+                    • Prodalign forms, trains, and oversees teams
                   </li>
                   <li>
-                    • Company engineers may review progress
+                    • Companies provide problems, not management
                   </li>
                   <li>
-                    • Learning-first intent, low risk for
-                    companies
+                    • Ideal for exploratory, non-critical work
                   </li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">
-                  Compensation
+                  Expectations
                 </h4>
                 <ul className="space-y-2 text-gray-600">
+                  <li>• Learning-first, not speed-first</li>
+                  <li>• ~90 min/month from senior engineers</li>
                   <li>• Work may be unpaid or stipend-based</li>
-                  <li>• Typical stipend: ~₹6,000/month</li>
-                  <li>• Hiring is optional, never obligated</li>
                   <li>
-                    • High signal for talent, low cost for
-                    companies
+                    • Hiring is optional, never required
                   </li>
                 </ul>
               </div>

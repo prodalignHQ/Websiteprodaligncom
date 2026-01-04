@@ -1,6 +1,20 @@
-import { motion } from 'motion/react';
-import { Link, useLocation } from 'react-router-dom';
-import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { motion } from "motion/react";
+import { Link, useLocation } from "react-router-dom";
+import {
+  ArrowRight,
+  ArrowLeft,
+  Building2,
+  Users,
+  Clock,
+  FileText,
+  CheckCircle,
+  XCircle,
+  TrendingUp,
+  Code,
+  Search,
+  Wrench,
+  Shield,
+} from "lucide-react";
 
 export function HiringPage() {
   const location = useLocation();
@@ -31,189 +45,532 @@ export function HiringPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-20"
+          className="mb-16"
         >
-          <h1 className="mb-6 text-[36px]">Prodalign Partner</h1>
-          <p className="text-gray-600 max-w-3xl">
-            The interface layer that connects companies with talent. Partner provides real-world problem statements that create learning opportunities—with hiring as an optional outcome, not an obligation.
+          <h1 className="mb-4 text-4xl">Prodalign Partner</h1>
+          <p className="text-xl text-gray-500 mb-6">
+            A structured way for companies to collaborate with student
+            teams—guided, mentored, and low risk
           </p>
+
+          <div className="max-w-3xl">
+            <p className="text-gray-700">
+              Partner connects real company problems with developing
+              talent, without forcing hiring or compromising quality.
+            </p>
+          </div>
         </motion.div>
 
-        {/* What Partner Actually Is */}
-        <motion.section
+        {/* Quick Overview Cards */}
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-20"
+          className="grid md:grid-cols-2 gap-6 mb-24"
         >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">What Partner Actually Is</h2>
-          <div className="space-y-6 text-gray-600">
-            <p>
-              Prodalign Partner is not a hiring agency. It's a system that connects companies with talent through real collaboration.
-            </p>
-            <p>
-              Companies submit non-critical or exploratory tasks—problems worth solving, but not urgent enough to block core operations. Teams from Prodalign Build work on these problems with structure and oversight.
-            </p>
-            <p>
-              The result: Companies get work done at low risk. Talent gets real-world exposure and skill development. Hiring may happen, but only when both sides are confident.
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="text-4xl mb-4">🤝</div>
+            <h3 className="text-xl mb-3">Not outsourcing</h3>
+            <p className="text-gray-600">
+              This is a mentored collaboration model. Prodalign forms,
+              trains, and oversees student teams—companies don't manage
+              them directly.
             </p>
           </div>
-        </motion.section>
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="text-4xl mb-4">🎯</div>
+            <h3 className="text-xl mb-3">Learning-first</h3>
+            <p className="text-gray-600">
+              Ideal for exploratory, non-critical work. Companies get
+              meaningful output. Students gain real-world discipline.
+              Hiring remains optional.
+            </p>
+          </div>
+        </motion.div>
 
-        {/* How It Works */}
+        {/* What is a Partner? */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-20 bg-gray-50 p-8 md:p-12 rounded-lg"
+          className="mb-24"
         >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">How Partner Works</h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl mb-3">1. Companies Submit Tasks</h3>
-              <p className="text-gray-600">
-                These are real problems—building a feature, researching a market, optimizing a workflow—but not mission-critical. Perfect for testing talent and providing learning opportunities.
+          <h2 className="text-4xl mb-8">What is a Prodalign Partner?</h2>
+
+          <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-8">
+            <p className="text-xl text-gray-700 mb-6">
+              Prodalign Partner is a collaboration model where companies
+              offload <strong>non-critical, exploratory, or long-term
+              work</strong> to student teams—without treating it like
+              outsourcing.
+            </p>
+
+            <div className="space-y-4 text-gray-700">
+              <p>
+                Prodalign forms, trains, and mentors a dedicated team of
+                students within a college. This team works as an{" "}
+                <strong>external engineering group</strong>, supported
+                closely by Prodalign mentors to ensure structure,
+                learning, and delivery.
               </p>
-            </div>
-            <div>
-              <h3 className="text-xl mb-3">2. Teams Are Assigned</h3>
-              <p className="text-gray-600">
-                Participants from Build are matched based on capability and interest. Teams are guided by moderators to ensure quality and accountability.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl mb-3">3. Work Happens with Check-ins</h3>
-              <p className="text-gray-600">
-                Weekly or bi-weekly check-ins keep everyone aligned. A company engineer may review progress. Feedback flows both ways.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl mb-3">4. Outcomes Emerge Naturally</h3>
-              <p className="text-gray-600">
-                Some projects lead to full-time offers. Others end with learning and goodwill. There's no pressure to hire—just transparency about what worked.
+              <p>
+                Companies don't manage students directly.{" "}
+                <strong>Prodalign does.</strong>
               </p>
             </div>
           </div>
-        </motion.section>
 
-        {/* Compensation Structure */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 border-l-4 border-[#FC7802] pl-8"
-        >
-          <h2 className="text-3xl md:text-4xl mb-6 text-[32px]">Compensation & Expectations</h2>
-          <div className="space-y-4 text-gray-600">
-            <p>
-              Work through Partner may be unpaid or stipend-based, depending on the project scope and company.
-            </p>
-            <p>
-              Typical stipend: <strong className="text-gray-900">~₹6,000/month</strong>
-            </p>
-            <p>
-              This isn't exploitation—it's a structured learning environment. Participants are building skills, portfolios, and connections that wouldn't exist otherwise. Companies are providing real problems and feedback.
-            </p>
-            <p className="pt-4 border-t border-gray-200">
-              <strong className="text-gray-900">Important:</strong> Hiring is optional, never obligated. Companies are free to offer full-time roles when they see fit—but there's no contract requiring it.
-            </p>
-          </div>
-        </motion.section>
-
-        {/* For Companies */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">Why Companies Partner with Prodalign</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Low Risk, High Signal</h3>
-              <p className="text-gray-600">
-                Evaluate talent through real work, not interviews. See how they think, collaborate, and deliver before making any commitments.
-              </p>
-            </div>
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Access Untapped Talent</h3>
-              <p className="text-gray-600">
-                Discover capable individuals from Tier 2 & Tier 3 cities who wouldn't appear in traditional hiring pipelines.
-              </p>
-            </div>
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Exploratory Work Gets Done</h3>
-              <p className="text-gray-600">
-                Those "nice-to-have" projects that never get prioritized? Partner teams can tackle them without pulling your core team away.
-              </p>
-            </div>
-            <div className="bg-white p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-xl mb-3">Learning-First Intent</h3>
-              <p className="text-gray-600">
-                Everyone understands this is about growth, not just deliverables. The pressure is lower, but the commitment is real.
-              </p>
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <h3 className="text-xl mb-6 text-gray-900">The result:</h3>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+                <span className="text-gray-700">
+                  Companies get meaningful work done at low risk
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+                <span className="text-gray-700">
+                  Students gain real-world exposure and discipline
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+                <span className="text-gray-700">
+                  Hiring remains optional, not assumed
+                </span>
+              </div>
             </div>
           </div>
         </motion.section>
 
-        {/* What This Isn't */}
+        {/* Eligibility */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-20 bg-gray-50 p-8 md:p-12 rounded-lg"
+          className="mb-24"
         >
-          <h2 className="text-3xl md:text-4xl mb-6 text-[32px]">What Partner Isn't</h2>
-          <ul className="space-y-3 text-gray-600">
-            <li>• Not a traditional staffing agency</li>
-            <li>• Not a guaranteed pipeline to full-time hires</li>
-            <li>• Not a replacement for your core engineering team</li>
-            <li>• Not a fast solution for urgent, mission-critical work</li>
-          </ul>
-          <p className="text-gray-600 mt-6 pt-6 border-t border-gray-200">
-            Partner works best when companies approach it with patience, clarity, and a genuine interest in talent development—not just cheap labor.
+          <h2 className="text-4xl mb-8">
+            Eligibility to become a Partner
+          </h2>
+
+          <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-6">
+            <p className="text-gray-700 mb-6">
+              Prodalign Partner is designed for{" "}
+              <strong className="text-gray-900">
+                serious, product-oriented companies.
+              </strong>
+            </p>
+            <p className="text-gray-600 text-sm">
+              To be eligible, a company should meet the following
+              criteria:
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="bg-gray-50 p-6 rounded-lg flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-[#FC7802] mt-0.5 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">
+                  Minimum 15+ full-time employees
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-[#FC7802] mt-0.5 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">
+                  Registered Pvt. Ltd. company or LLP
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-[#FC7802] mt-0.5 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">
+                  At least 1 year since incorporation
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-[#FC7802] mt-0.5 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">
+                  Product-driven (not services-only)
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-[#FC7802] mt-0.5 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">
+                  Has senior technical leadership available for
+                  periodic review
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-[#FC7802] mt-0.5 flex-shrink-0" />
+              <div>
+                <div className="text-gray-900 mb-1">
+                  Comfortable with a learning-first collaboration model
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-gray-600 italic mt-6 pt-6 border-t border-gray-200">
+            Prodalign is selective by design. Not every company is a good
+            fit—and that's intentional.
           </p>
         </motion.section>
 
-        {/* Example Use Cases */}
+        {/* What a Partner Gives */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-20"
+          className="mb-24"
         >
-          <h2 className="text-3xl md:text-4xl mb-8 text-[32px]">Example Partner Projects</h2>
-          <div className="space-y-4">
-            <div className="border-l-4 border-gray-200 pl-6">
-              <p className="text-gray-600">
-                <strong className="text-gray-900">Market Research:</strong> Analyze competitor features, user feedback trends, or regional market opportunities.
-              </p>
+          <h2 className="text-4xl mb-8">What a Partner needs to give</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Problem Definition */}
+            <div className="bg-white border-2 border-gray-200 rounded-lg p-8">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-6 h-6 text-gray-700" />
+                </div>
+                <div>
+                  <h3 className="text-2xl mb-2">Problem Definition</h3>
+                </div>
+              </div>
+              <div className="ml-16 space-y-3">
+                <p className="text-gray-600 mb-4">
+                  Partners are expected to provide:
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2">
+                    <span className="text-gray-400 mt-1">→</span>
+                    <span className="text-gray-700">
+                      A clear problem statement or requirement
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-gray-400 mt-1">→</span>
+                    <span className="text-gray-700">
+                      Context around why the problem matters
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-gray-400 mt-1">→</span>
+                    <span className="text-gray-700">
+                      Constraints, expectations, and success criteria
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm italic pt-4">
+                  These should be important but not mission-critical
+                  problems.
+                </p>
+              </div>
             </div>
-            <div className="border-l-4 border-gray-200 pl-6">
-              <p className="text-gray-600">
-                <strong className="text-gray-900">Internal Tools:</strong> Build dashboards, automation scripts, or workflow improvements for internal teams.
-              </p>
-            </div>
-            <div className="border-l-4 border-gray-200 pl-6">
-              <p className="text-gray-600">
-                <strong className="text-gray-900">Content & Marketing:</strong> Create technical documentation, case studies, or early-stage content strategies.
-              </p>
-            </div>
-            <div className="border-l-4 border-gray-200 pl-6">
-              <p className="text-gray-600">
-                <strong className="text-gray-900">Experimental Features:</strong> Prototype ideas that aren't core roadmap priorities but could add value if proven.
-              </p>
+
+            {/* Time Commitment */}
+            <div className="bg-[#FC7802]/5 border-2 border-[#FC7802]/20 rounded-lg p-8">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-[#FC7802]" />
+                </div>
+                <div>
+                  <h3 className="text-2xl mb-2">Time Commitment</h3>
+                </div>
+              </div>
+              <div className="ml-16 space-y-3">
+                <p className="text-gray-600 mb-4">
+                  Partners are expected to commit:
+                </p>
+                <div className="bg-white p-4 rounded-lg mb-4">
+                  <div className="text-2xl text-[#FC7802] mb-1">
+                    ~90 min/month
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Preferably from senior engineers (SDE-IV+),
+                    engineering managers, or tech leads
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-2">This time is used for:</p>
+                <div className="space-y-1 text-sm text-gray-600">
+                  <div>• Reviews</div>
+                  <div>• Directional feedback</div>
+                  <div>• Course correction</div>
+                </div>
+              </div>
             </div>
           </div>
         </motion.section>
 
-        {/* CTA */}
+        {/* What a Partner Gets */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
+        >
+          <h2 className="text-4xl mb-10">What a Partner gets</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Dedicated Team</h3>
+              <p className="text-gray-600">
+                A focused team of 2–6 engineers working on your problem
+                statement.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+                <Shield className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Mentored Execution</h3>
+              <p className="text-gray-600">
+                Prodalign mentors oversee training, structure, and
+                delivery quality.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+                <Code className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Code & Output Ownership</h3>
+              <p className="text-gray-600">
+                Complete handover of code, documentation, and outputs.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 text-gray-700" />
+              </div>
+              <h3 className="text-xl mb-3">Hiring Optionality</h3>
+              <p className="text-gray-600">
+                Evaluate talent with hands-on domain experience. Hiring
+                is possible—but never compulsory.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-gray-700 text-center mt-8 pt-8 border-t border-gray-200 italic">
+            This is not trial hiring. It's informed collaboration.
+          </p>
+        </motion.section>
+
+        {/* Compensation */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24"
+        >
+          <h2 className="text-4xl mb-8">Compensation & Expectations</h2>
+
+          <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10">
+            <div className="space-y-4 text-gray-700">
+              <p>Work under Prodalign Partner may be:</p>
+              <div className="grid md:grid-cols-2 gap-4 my-6">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <div className="text-gray-900">Unpaid, or</div>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <div className="text-gray-900">
+                    Stipend-based depending on scope
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#FC7802]/5 p-6 rounded-lg border border-[#FC7802]/20">
+                <div className="text-sm text-gray-600 mb-1">
+                  Typical stipend
+                </div>
+                <div className="text-2xl text-gray-900">
+                  ~₹6,000/month
+                </div>
+              </div>
+
+              <p className="pt-4">
+                This model exists to support learning—not to replace
+                full-time roles or reduce company costs.
+              </p>
+
+              <div className="bg-gray-50 p-6 rounded-lg mt-6">
+                <p className="text-gray-700 mb-3">
+                  Participants are compensated with:
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                    <span className="text-gray-700">Real experience</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                    <span className="text-gray-700">Mentorship</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                    <span className="text-gray-700">Exposure</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                    <span className="text-gray-700">
+                      Optional hiring opportunities
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mt-6 italic">
+            Transparency is mandatory. Exploitation is not tolerated.
+          </p>
+        </motion.section>
+
+        {/* Who Partner is NOT for */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24"
+        >
+          <h2 className="text-4xl mb-8">Who Partner is not for</h2>
+
+          <div className="bg-gray-50 p-8 md:p-10 rounded-lg">
+            <p className="text-gray-700 mb-6">
+              Prodalign Partner is <strong>not</strong> the right fit for
+              companies that:
+            </p>
+
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-700">
+                  Need immediate delivery for mission-critical work
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-700">
+                  Are looking for a staffing or outsourcing agency
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-700">
+                  Want to hand off work and disengage
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <XCircle className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-700">
+                  View this primarily as a cost-cutting exercise
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <p className="text-gray-700 mb-3">
+                Partner works best when companies value:
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#FC7802]" />
+                  <span className="text-gray-700">Learning</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#FC7802]" />
+                  <span className="text-gray-700">Patience</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#FC7802]" />
+                  <span className="text-gray-700">
+                    Long-term talent development
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Why Companies Choose Prodalign */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
+        >
+          <h2 className="text-4xl mb-8">
+            Why companies choose Prodalign
+          </h2>
+
+          <div className="space-y-4">
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <p className="text-gray-700">
+                  Evaluate talent through real work, not interviews
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <p className="text-gray-700">
+                  Access capable students outside traditional pipelines
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <p className="text-gray-700">
+                  Get exploratory work done without disrupting core teams
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
+              <div>
+                <p className="text-gray-700">
+                  Contribute meaningfully to talent development
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Closing CTA */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -221,9 +578,13 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="text-center border-t border-gray-200 pt-12"
         >
-          <h2 className="text-3xl mb-6">Interested in Partnering?</h2>
+          <h2 className="text-3xl mb-4">
+            Prodalign Partner isn't about speed or scale.
+          </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Whether you're exploring, hiring, or building—we'd love to talk.
+            It's about building trust—slowly and deliberately. If your
+            company values thoughtful execution and long-term talent
+            growth, we're open to a conversation.
           </p>
           <Link
             to="/contact"

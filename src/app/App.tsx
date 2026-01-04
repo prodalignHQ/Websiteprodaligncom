@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { ScrollToTop } from './components/ScrollToTop';
+import { Footer } from './components/Footer';
 import { HomePage } from './components/HomePage';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
@@ -12,16 +13,19 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white flex flex-col">
         <Navigation />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/training" element={<TrainingPage />} />
-          <Route path="/hiring" element={<HiringPage />} />
-          <Route path="/building" element={<BuildingPage />} />
-        </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/training" element={<TrainingPage />} />
+            <Route path="/hiring" element={<HiringPage />} />
+            <Route path="/building" element={<BuildingPage />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );
