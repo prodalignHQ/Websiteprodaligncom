@@ -77,7 +77,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/building"
+                  to="/board"
                   className="text-gray-600 hover:text-[#FC7802] transition-colors"
                 >
                   Prodalign Board

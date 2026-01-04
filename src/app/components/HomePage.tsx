@@ -278,8 +278,8 @@ export function HomePage() {
             </div>
 
             <Link
-              to="/building"
-              onClick={handleUseCaseClick("/building")}
+              to="/board"
+              onClick={handleUseCaseClick("/board")}
               className="inline-flex items-center gap-2 text-[#FC7802] hover:gap-3 transition-all"
             >
               Understand the Board program

@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight, ArrowLeft, Compass, Shield, Users, TrendingUp, CheckCircle, XCircle } from 'lucide-react';
 
-export function BuildingPage() {
+export function BoardPage() {
   const location = useLocation();
   const savedScrollY = location.state?.scrollY;
 

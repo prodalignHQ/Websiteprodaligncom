@@ -7,7 +7,7 @@ import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
 import { StudioPage } from './components/StudioPage';
 import { HiringPage } from './components/HiringPage';
-import { BuildingPage } from './components/BuildingPage';
+import { BoardPage } from './components/BoardPage';
 
 export default function App() {
   return (
@@ -22,7 +22,7 @@ export default function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/studio" element={<StudioPage />} />
             <Route path="/hiring" element={<HiringPage />} />
-            <Route path="/building" element={<BuildingPage />} />
+            <Route path="/board" element={<BoardPage />} />
           </Routes>
         </main>
         <Footer />
