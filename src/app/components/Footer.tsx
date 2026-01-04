@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
-import imgShip from "figma:asset/ed4ca6a6327363eabfafb2082120fc537cbad4d3.png";
 
 export function Footer() {
   return (
@@ -9,9 +8,12 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Contact */}
           <div className="md:col-span-2">
-            <Link to="/" className="inline-flex flex-col items-center gap-2 mb-6">
+            <Link
+              to="/"
+              className="inline-flex flex-col items-center gap-2 mb-6"
+            >
               <img
-                src={imgShip}
+                src="/prodalign-ship.png"
                 alt="Prodalign"
                 className="h-12 object-contain"
               />
