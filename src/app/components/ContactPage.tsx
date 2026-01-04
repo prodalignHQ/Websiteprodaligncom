@@ -1,13 +1,13 @@
-import { motion } from 'motion/react';
-import { useState } from 'react';
-import { CheckCircle } from 'lucide-react';
+import { motion } from "motion/react";
+import { useState } from "react";
+import { CheckCircle } from "lucide-react";
 
 export function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    role: '',
-    message: ''
+    name: "",
+    email: "",
+    role: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -17,14 +17,18 @@ export function ContactPage() {
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
-      setFormData({ name: '', email: '', role: '', message: '' });
+      setFormData({ name: "", email: "", role: "", message: "" });
     }, 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -39,7 +43,7 @@ export function ContactPage() {
         >
           <h1 className="text-5xl md:text-6xl mb-6">Let's Talk</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Whether you're exploring, hiring, or building—we'd love to talk.
+            Whether you're exploring, hiring, or building, we'd love to talk.
           </p>
         </motion.div>
 
