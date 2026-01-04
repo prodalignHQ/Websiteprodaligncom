@@ -72,7 +72,7 @@ export function Footer() {
                   to="/training"
                   className="text-gray-600 hover:text-[#FC7802] transition-colors"
                 >
-                  Prodalign Build
+                  Prodalign Studio
                 </Link>
               </li>
               <li>

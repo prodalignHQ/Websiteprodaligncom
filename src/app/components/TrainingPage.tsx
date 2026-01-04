@@ -41,14 +41,14 @@ export function TrainingPage() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h1 className="mb-4 text-4xl">Prodalign Build</h1>
+          <h1 className="mb-4 text-4xl">Prodalign Studio</h1>
           <p className="text-xl text-gray-500 mb-6">
             The foundation of the Prodalign ecosystem
           </p>
 
           <div className="max-w-3xl">
             <p className="text-gray-700">
-              Build exists to help students move beyond
+              Studio exists to help students move beyond
               micro-projects and develop the depth, context, and
               patience that real work requires.
             </p>
@@ -67,7 +67,7 @@ export function TrainingPage() {
             <div className="text-4xl mb-4">📚</div>
             <h3 className="text-xl mb-3">Not a classroom</h3>
             <p className="text-gray-600">
-              Build operates like a startup. You work on one or
+              Studio operates like a startup. You work on one or
               two problem statements and stay with them long
               enough to understand the domain.
             </p>
@@ -83,7 +83,7 @@ export function TrainingPage() {
           </div>
         </motion.div>
 
-        {/* What is Prodalign Build? */}
+        {/* What is Prodalign Studio? */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -92,13 +92,13 @@ export function TrainingPage() {
           className="mb-24"
         >
           <h2 className="text-4xl mb-8">
-            What is Prodalign Build?
+            What is Prodalign Studio?
           </h2>
 
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-8">
             <p className="text-xl text-gray-700 mb-6">
               A program where students work together in small
-              teams to build real products over an extended
+              teams to Studio real products over an extended
               period of time.
             </p>
             <p className="text-gray-600 mb-6">
@@ -136,7 +136,7 @@ export function TrainingPage() {
           <div className="bg-[#FC7802]/5 border-l-4 border-[#FC7802] p-6 rounded-r-lg">
             <p className="text-gray-700">
               While primarily designed for students interested
-              in software engineering, Build intentionally
+              in software engineering, Studio intentionally
               exposes participants to other roles—product
               design, product management, sales, marketing, and
               content.
@@ -157,7 +157,7 @@ export function TrainingPage() {
           className="mb-24"
         >
           <h2 className="text-4xl mb-8">
-            Who is Prodalign Build for?
+            Who is Prodalign Studio for?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -269,7 +269,7 @@ export function TrainingPage() {
                   </h3>
                   <p className="text-gray-600">
                     This structure is intentional. We're
-                    building consistency, rhythm, and ownership.
+                    Studioing consistency, rhythm, and ownership.
                   </p>
                 </div>
               </div>
@@ -355,7 +355,7 @@ export function TrainingPage() {
           className="mb-24"
         >
           <h2 className="text-4xl mb-12">
-            How Prodalign Build works
+            How Prodalign Studio works
           </h2>
 
           <div className="space-y-8">
@@ -462,7 +462,7 @@ export function TrainingPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl mb-3">
-                  Before building begins
+                  Before Studioing begins
                 </h3>
                 <p className="text-gray-700 mb-4">
                   Before any code is written, mentors spend time
@@ -506,7 +506,7 @@ export function TrainingPage() {
               </div>
               <div className="flex-1 bg-[#FC7802]/5 p-8 rounded-lg border-2 border-[#FC7802]/20">
                 <h3 className="text-2xl mb-3">
-                  Building, consistently
+                  Studioing, consistently
                 </h3>
                 <p className="text-gray-700 mb-6">
                   Once direction is clear, the team begins work.
@@ -554,7 +554,7 @@ export function TrainingPage() {
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
           <h2 className="text-4xl mb-8">
-            What you gain from Build
+            What you gain from Studio
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -635,7 +635,7 @@ export function TrainingPage() {
             <div className="space-y-8">
               <div>
                 <p className="text-xl text-gray-700 mb-4">
-                  Prodalign Build isn't a shortcut. It doesn't
+                  Prodalign Studio isn't a shortcut. It doesn't
                   promise guaranteed jobs or instant results.
                 </p>
               </div>
@@ -667,7 +667,7 @@ export function TrainingPage() {
                 <p className="text-xl text-gray-900 max-w-3xl">
                   But if you're willing to show up consistently,
                   learn through practice, and grow over
-                  time—Build gives you a foundation most
+                  time—Studio gives you a foundation most
                   students never get.
                 </p>
               </div>
@@ -687,7 +687,7 @@ export function TrainingPage() {
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
             Whether you're a student trying to understand real
             work, a company exploring collaboration, or someone
-            building long-term—we're open to a conversation.
+            Studioing long-term—we're open to a conversation.
           </p>
           <Link
             to="/contact"

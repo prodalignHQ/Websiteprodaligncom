@@ -169,7 +169,7 @@ export function BuildingPage() {
                 <h3 className="text-xl">Not sure yet?</h3>
               </div>
               <p className="text-gray-700 mb-4">
-                If you're unsure whether you want to be a founder yet, <Link to="/training" className="text-[#FC7802] hover:underline font-medium">Prodalign Build</Link> is often the right place to start.
+                If you're unsure whether you want to be a founder yet, <Link to="/training" className="text-[#FC7802] hover:underline font-medium">Prodalign Studio</Link> is often the right place to start.
               </p>
               <div className="pt-4 border-t border-gray-300">
                 <p className="text-sm text-gray-600">
