@@ -10,7 +10,7 @@ import {
   XCircle,
 } from "lucide-react";
 
-export function TrainingPage() {
+export function StudioPage() {
   const location = useLocation();
   const savedScrollY = location.state?.scrollY;
 
@@ -102,7 +102,7 @@ export function TrainingPage() {
               period of time.
             </p>
             <p className="text-gray-600 mb-6">
-              The focus is not on finishing fast—it's on
+              The focus is not on finishing fast. It's on
               learning how real work unfolds:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
@@ -137,13 +137,12 @@ export function TrainingPage() {
             <p className="text-gray-700">
               While primarily designed for students interested
               in software engineering, Studio intentionally
-              exposes participants to other roles—product
+              exposes participants to other roles such as product
               design, product management, sales, marketing, and
               content.
             </p>
             <p className="text-gray-600 mt-3 italic">
-              Not because you need to master everything, but
-              because real companies don't operate in silos.
+              You don't need to know it all. Understanding adjacent roles helps you find where you truly belong.
             </p>
           </div>
         </motion.section>
@@ -269,7 +268,7 @@ export function TrainingPage() {
                   </h3>
                   <p className="text-gray-600">
                     This structure is intentional. We're
-                    Studioing consistency, rhythm, and ownership.
+                    Building consistency, rhythm, and ownership.
                   </p>
                 </div>
               </div>
@@ -338,8 +337,7 @@ export function TrainingPage() {
                   </div>
                 </div>
                 <p className="text-gray-600 italic pt-4">
-                  If you're unsure whether you're "good
-                  enough"—that's often a good reason to try.
+                  If you're unsure whether you're "good enough", that's often a good reason to try.
                 </p>
               </div>
             </div>
@@ -388,13 +386,13 @@ export function TrainingPage() {
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-gray-400" />
                       <span className="text-gray-600">
-                        Problem-solving oriented thinkers
+                        System-focused doers
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-gray-400" />
                       <span className="text-gray-600">
-                        Vision-oriented leaders
+                        Outcome-focused thinkers
                       </span>
                     </div>
                   </div>
@@ -462,7 +460,7 @@ export function TrainingPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl mb-3">
-                  Before Studioing begins
+                  Before Building begins
                 </h3>
                 <p className="text-gray-700 mb-4">
                   Before any code is written, mentors spend time
@@ -506,7 +504,7 @@ export function TrainingPage() {
               </div>
               <div className="flex-1 bg-[#FC7802]/5 p-8 rounded-lg border-2 border-[#FC7802]/20">
                 <h3 className="text-2xl mb-3">
-                  Studioing, consistently
+                  Building, consistently
                 </h3>
                 <p className="text-gray-700 mb-6">
                   Once direction is clear, the team begins work.
@@ -538,7 +536,7 @@ export function TrainingPage() {
                   </div>
                 </div>
                 <p className="text-gray-700 mt-6 text-center italic">
-                  The goal is steady progress—not pressure.
+                  The goal is steady progress, not pressure to cross an imaginary finish line.
                 </p>
               </div>
             </div>
@@ -664,10 +662,10 @@ export function TrainingPage() {
               </div>
 
               <div className="pt-6 border-t border-gray-200">
-                <p className="text-xl text-gray-900 max-w-3xl">
+                <p className="text-lg text-gray-900 max-w-3xl">
                   But if you're willing to show up consistently,
                   learn through practice, and grow over
-                  time—Studio gives you a foundation most
+                  time, Studio gives you a foundation most
                   students never get.
                 </p>
               </div>
@@ -687,7 +685,7 @@ export function TrainingPage() {
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
             Whether you're a student trying to understand real
             work, a company exploring collaboration, or someone
-            Studioing long-term—we're open to a conversation.
+            Building long-term, drop a note!
           </p>
           <Link
             to="/contact"

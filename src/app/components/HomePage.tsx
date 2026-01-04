@@ -218,8 +218,8 @@ export function HomePage() {
             </div>
 
             <Link
-              to="/training"
-              onClick={handleUseCaseClick("/training")}
+              to="/studio"
+              onClick={handleUseCaseClick("/studio")}
               className="inline-flex items-center gap-2 text-[#FC7802] hover:gap-3 transition-all"
             >
               Learn how Prodalign Studio works

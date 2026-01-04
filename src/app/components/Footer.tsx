@@ -69,7 +69,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/training"
+                  to="/studio"
                   className="text-gray-600 hover:text-[#FC7802] transition-colors"
                 >
                   Prodalign Studio
