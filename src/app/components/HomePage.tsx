@@ -1,20 +1,29 @@
-import { motion } from 'motion/react';
-import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { motion } from "motion/react";
+import { Link, useNavigate } from "react-router-dom";
+import {
+  ArrowRight,
+  Layers,
+  Users,
+  Lightbulb,
+} from "lucide-react";
 import imgShip from "figma:asset/ed4ca6a6327363eabfafb2082120fc537cbad4d3.png";
 
 export function HomePage() {
   const navigate = useNavigate();
 
   const scrollToContact = () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
   };
 
-  const handleUseCaseClick = (path: string) => (e: React.MouseEvent) => {
-    e.preventDefault();
-    const scrollY = window.scrollY;
-    navigate(path, { state: { scrollY } });
-  };
+  const handleUseCaseClick =
+    (path: string) => (e: React.MouseEvent) => {
+      e.preventDefault();
+      const scrollY = window.scrollY;
+      navigate(path, { state: { scrollY } });
+    };
 
   return (
     <div className="min-h-screen bg-white">
@@ -33,7 +42,11 @@ export function HomePage() {
               transition={{ duration: 1, delay: 0.2 }}
               className="w-48 h-48 relative"
             >
-              <img src={imgShip} alt="Journey" className="w-full h-full object-contain" />
+              <img
+                src={imgShip}
+                alt="Journey"
+                className="w-full h-full object-contain"
+              />
             </motion.div>
           </div>
 
@@ -43,9 +56,9 @@ export function HomePage() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl md:text-6xl lg:text-7xl mb-6"
           >
-            Unlocking Potential
+            Talent exists everywhere.
             <br />
-            From Anywhere
+            Structure doesn't.
           </motion.h1>
 
           <motion.p
@@ -54,8 +67,9 @@ export function HomePage() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto"
           >
-            Bridging the gap between raw talent and real opportunity.
-            We don't wait for polish—we create it through work, mentorship, and structure.
+            Prodalign builds structure around raw talent—turning
+            individuals into teams, teams into operators, and
+            operators into founders.
           </motion.p>
 
           <motion.button
@@ -82,7 +96,7 @@ export function HomePage() {
         </motion.div>
       </section>
 
-      {/* Philosophy Section */}
+      {/* Capability States Section */}
       <section className="py-24 px-6 lg:px-12 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -92,41 +106,61 @@ export function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl mb-6">One Story, Many Outcomes</h2>
+            <h2 className="text-4xl md:text-5xl mb-6">
+              People don't start at the same place. And that's
+              okay.
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Prodalign doesn't separate talent, companies, or builders. All three grow together through real work, real learning, and real opportunity.
+              These are working states, not identities. People
+              move between them. No state is better than
+              another.
             </p>
           </motion.div>
 
-          {/* Interlocking Cards */}
-          <div className="grid md:grid-cols-3 gap-8 relative">
+          {/* Capability States */}
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Potential", desc: "We identify what's possible, not what's already perfect" },
-              { title: "Practice", desc: "Real work creates real skills—faster than any classroom" },
-              { title: "Progress", desc: "Every connection strengthens the entire ecosystem" }
-            ].map((item, index) => (
+              {
+                icon: Layers,
+                title: "Execution-Focused",
+                desc: "People who currently work best with clear direction, structure, and defined tasks.",
+              },
+              {
+                icon: Users,
+                title: "Problem-Solving Oriented",
+                desc: "People who enjoy working on defined problems and improving systems over time.",
+              },
+              {
+                icon: Lightbulb,
+                title: "Vision-Oriented",
+                desc: "People who naturally think in terms of products, outcomes, and long-term direction.",
+              },
+            ].map((state, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2, duration: 0.8 }}
-                className="bg-white p-8 rounded-lg border border-gray-200 hover:border-[#FC7802] transition-colors"
+                transition={{
+                  delay: index * 0.15,
+                  duration: 0.8,
+                }}
+                className="bg-white p-8 rounded-lg border border-gray-200"
               >
-                <div className="w-12 h-12 mb-4 rounded-full bg-[#FC7802]/10 flex items-center justify-center">
-                  <div className="w-6 h-6 rounded-full bg-[#FC7802]" />
+                <div className="w-12 h-12 mb-4 rounded-full bg-gray-100 flex items-center justify-center">
+                  <state.icon className="w-6 h-6 text-gray-700" />
                 </div>
-                <h3 className="text-2xl mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
+                <h3 className="text-2xl mb-3">{state.title}</h3>
+                <p className="text-gray-600">{state.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Three Products Section */}
+      {/* How Prodalign Works - Layered System */}
       <section className="py-24 px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -134,127 +168,272 @@ export function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl mb-6">Three Products. One Alignment.</h2>
+            <h2 className="text-4xl md:text-5xl mb-6">
+              One System. Three Layers.
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Different journeys. One shared philosophy — learning, hiring, and building through real work.
+              Prodalign is a single ecosystem with progressive
+              layers—not parallel choices. Everyone enters
+              through the same foundation.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Prodalign Build",
-                subtitle: "For students and early-career individuals who want to build real skills by working on real problems.",
-                description: "Hands-on projects, structured mentorship, and real-world exposure designed to turn potential into confidence.",
-                link: "/training"
-              },
-              {
-                title: "Prodalign Partner",
-                subtitle: "For companies looking to hire talent through trust, collaboration, and real-world evaluation.",
-                description: "Work with talent on a contract basis, assess performance in practice, and convert to full-time when aligned.",
-                link: "/hiring"
-              },
-              {
-                title: "Prodalign Board",
-                subtitle: "For future founders, operators, and leaders building judgment through real execution.",
-                description: "Learn how to think, decide, and lead by working inside real products and businesses.",
-                link: "/building"
-              }
-            ].map((useCase, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.8 }}
-                className="group"
-              >
-                <Link to={useCase.link} className="block h-full" onClick={handleUseCaseClick(useCase.link)}>
-                  <div className="h-full p-8 border-2 border-gray-200 rounded-lg hover:border-[#FC7802] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                    <h3 className="text-2xl mb-4">
-                      {useCase.title}
-                    </h3>
-                    <p className="text-gray-700 mb-4 leading-relaxed">
-                      {useCase.subtitle}
-                    </p>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      {useCase.description}
-                    </p>
-                    <div className="inline-flex items-center gap-2 text-[#FC7802] group-hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Prodalign Exists */}
-      <section className="py-24 px-6 lg:px-12">
-        <div className="max-w-5xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-4xl md:text-5xl text-center mb-20"
-          >
-            Why Prodalign Exists
-          </motion.h2>
-
-          <div className="space-y-16">
-            {[
-              { step: "01", title: "Discover Potential", desc: "We identify raw talent based on curiosity, commitment, and capability—not credentials" },
-              { step: "02", title: "Work Together", desc: "Real projects with real companies create real growth for everyone involved" },
-              { step: "03", title: "Learn by Doing", desc: "Mentorship, structure, and feedback transform potential into proven skill" },
-              { step: "04", title: "Grow Into Roles", desc: "What starts as a contract can become a career, a venture, or a new chapter" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.8 }}
-                className="flex gap-8 items-start"
-              >
-                <div className="text-6xl font-light text-[#FC7802]/20 min-w-[100px]">
-                  {item.step}
-                </div>
-                <div>
-                  <h3 className="text-2xl mb-3">{item.title}</h3>
-                  <p className="text-gray-600 text-lg">{item.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Connecting Line */}
-          <motion.div
-            initial={{ scaleY: 0 }}
-            whileInView={{ scaleY: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.5 }}
-            className="absolute left-[130px] top-0 w-px h-full bg-gradient-to-b from-[#FC7802]/20 via-[#FC7802]/50 to-[#FC7802]/20 origin-top"
-            style={{ marginTop: '2rem' }}
-          />
-        </div>
-      </section>
-
-      {/* Social Proof */}
-      <section className="py-24 px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto">
+          {/* Layer 1: Build (Foundation) */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center"
+            transition={{ duration: 0.8 }}
+            className="mb-16 bg-white border-2 border-gray-200 rounded-lg p-8 md:p-12"
           >
-            <blockquote className="text-2xl md:text-3xl italic text-gray-700 mb-8">
-              "The best way to predict the future is to create it through the work we do today."
-            </blockquote>
-            <p className="text-gray-500">— Prodalign Philosophy</p>
+            <div className="mb-4">
+              <span className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+                <span className="w-2 h-2 rounded-full bg-[#FC7802] shadow-[0_0_4px_rgba(252,120,2,0.6)]" />
+                Ideal for students in colleges
+              </span>
+            </div>
+            <div className="flex items-start gap-6 mb-6">
+              <div className="w-16 h-16 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl text-[#FC7802]">
+                  01
+                </span>
+              </div>
+              <div>
+                <h3 className="text-3xl mb-3">
+                  Prodalign Build
+                </h3>
+                <p className="text-gray-600 text-lg mb-6">
+                  The foundation of everything. Build operates
+                  like a mock startup where participants
+                  function as employees.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 className="font-semibold mb-2">
+                  Structure
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>
+                    • Teams are intentionally mixed (leadership
+                    + task-oriented)
+                  </li>
+                  <li>
+                    • Work based on long-running problem
+                    statements
+                  </li>
+                  <li>
+                    • Weekly guidance from moderators and
+                    mentors
+                  </li>
+                  <li>
+                    • Exposure to engineering and
+                    non-engineering roles
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">
+                  Commitment
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• ~45 minutes on weekdays</li>
+                  <li>• ~1.5 hours on Saturdays</li>
+                  <li>
+                    • Real work, real feedback, real growth
+                  </li>
+                  <li>• Early redirection when needed</li>
+                </ul>
+              </div>
+            </div>
+
+            <Link
+              to="/training"
+              onClick={handleUseCaseClick("/training")}
+              className="inline-flex items-center gap-2 text-[#FC7802] hover:gap-3 transition-all"
+            >
+              Learn how Prodalign Build works
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </motion.div>
+
+          {/* Layer 2: Board */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-16 bg-white border-2 border-gray-200 rounded-lg p-8 md:p-12"
+          >
+            <div className="mb-4">
+              <span className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+                <span className="w-2 h-2 rounded-full bg-[#FC7802] shadow-[0_0_4px_rgba(252,120,2,0.6)]" />
+                1st-Time Founders, &lt; 28y
+              </span>
+            </div>
+            <div className="flex items-start gap-6 mb-6">
+              <div className="w-16 h-16 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl text-[#FC7802]">
+                  02
+                </span>
+              </div>
+              <div>
+                <h3 className="text-3xl mb-3">
+                  Prodalign Board
+                </h3>
+                <p className="text-gray-600 text-lg mb-6">
+                  Selective and aspirational. For individuals
+                  showing strong vision and founder potential.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 className="font-semibold mb-2">
+                  Eligibility
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• A business idea, OR</li>
+                  <li>• A draft business plan, OR</li>
+                  <li>• Market research, OR</li>
+                  <li>
+                    • Openness to work on a Prodalign-assigned
+                    problem
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">
+                  Structure
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• 2–6 board members per venture</li>
+                  <li>• Each member receives 1.5% equity</li>
+                  <li>• Prodalign retains 0.75% equity</li>
+                  <li>
+                    • 12-month access, up to 6 board meetings
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <Link
+              to="/building"
+              onClick={handleUseCaseClick("/building")}
+              className="inline-flex items-center gap-2 text-[#FC7802] hover:gap-3 transition-all"
+            >
+              Understand the Board program
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </motion.div>
+
+          {/* Layer 3: Partner */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-12"
+          >
+            <div className="mb-4">
+              <span className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+                <span className="w-2 h-2 rounded-full bg-[#FC7802] shadow-[0_0_4px_rgba(252,120,2,0.6)]" />
+                For companies
+              </span>
+            </div>
+            <div className="flex items-start gap-6 mb-6">
+              <div className="w-16 h-16 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl text-[#FC7802]">
+                  03
+                </span>
+              </div>
+              <div>
+                <h3 className="text-3xl mb-3">
+                  Prodalign Partner
+                </h3>
+                <p className="text-gray-600 text-lg mb-6">
+                  Partner provides real-world problem statements
+                  from companies. This is where learning meets
+                  practice.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 className="font-semibold mb-2">
+                  How It Works
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>
+                    • Companies submit non-critical or
+                    exploratory tasks
+                  </li>
+                  <li>
+                    • Teams work with weekly or bi-weekly
+                    check-ins
+                  </li>
+                  <li>
+                    • Company engineers may review progress
+                  </li>
+                  <li>
+                    • Learning-first intent, low risk for
+                    companies
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">
+                  Compensation
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Work may be unpaid or stipend-based</li>
+                  <li>• Typical stipend: ~₹6,000/month</li>
+                  <li>• Hiring is optional, never obligated</li>
+                  <li>
+                    • High signal for talent, low cost for
+                    companies
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <Link
+              to="/hiring"
+              onClick={handleUseCaseClick("/hiring")}
+              className="inline-flex items-center gap-2 text-[#FC7802] hover:gap-3 transition-all"
+            >
+              Partner with Prodalign
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Closing Section */}
+      <section className="py-24 px-6 lg:px-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <h2 className="text-4xl md:text-5xl mb-8">
+              The Ecosystem Outcome
+            </h2>
+            <div className="space-y-4 text-xl text-gray-600">
+              <p>Some people grow into strong engineers.</p>
+              <p>Some grow into leaders.</p>
+              <p>A few grow into founders.</p>
+            </div>
+            <p className="text-2xl text-gray-900 pt-8">
+              Prodalign exists to support all of them—without
+              forcing outcomes.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -267,9 +446,12 @@ export function HomePage() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="text-4xl md:text-5xl mb-6">Ready to Get Started?</h2>
+          <h2 className="text-4xl md:text-5xl mb-6">
+            Ready to Get Started?
+          </h2>
           <p className="text-xl mb-8 opacity-90">
-            Whether you're exploring, hiring, or building—we'd love to talk.
+            Whether you're exploring, hiring, or building—we'd
+            love to talk.
           </p>
           <Link
             to="/contact"
