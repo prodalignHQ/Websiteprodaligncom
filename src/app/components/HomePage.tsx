@@ -47,22 +47,23 @@ export function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-6xl lg:text-7xl mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl mb-4"
           >
-            Talent exists everywhere.
+            Helping individuals build structure 
             <br />
-            Structure doesn't.
+            to create meaningful products.
+            
           </motion.h1>
 
-          <motion.p
+           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto"
+            className="text-sm md:text-md lg:text-lg mb-6"
           >
-            Prodalign builds structure around raw talent—turning individuals
-            into teams, teams into operators, and operators into founders.
+            From talent to teams, teams to operators, and operators to founders.
           </motion.p>
+
 
           <motion.button
             initial={{ opacity: 0, y: 20 }}
@@ -117,12 +118,12 @@ export function HomePage() {
               },
               {
                 icon: Users,
-                title: "Problem-Solving Oriented",
+                title: "Systems-Focused",
                 desc: "People who enjoy working on defined problems and improving systems over time.",
               },
               {
                 icon: Lightbulb,
-                title: "Vision-Oriented",
+                title: "Outcome-Focused",
                 desc: "People who naturally think in terms of products, outcomes, and long-term direction.",
               },
             ].map((state, index) => (
@@ -162,8 +163,8 @@ export function HomePage() {
               One System. Three Layers.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Prodalign is a single ecosystem with progressive layers—not
-              parallel choices. Everyone enters through the same foundation.
+              Prodalign is a single ecosystem with multiple layers.
+              Everyone enters through the same foundation.
             </p>
           </motion.div>
 
@@ -186,10 +187,9 @@ export function HomePage() {
                 <span className="text-2xl text-[#FC7802]">01</span>
               </div>
               <div>
-                <h3 className="text-3xl mb-3">Prodalign Build</h3>
+                <h3 className="text-3xl mb-3">Prodalign Studio</h3>
                 <p className="text-gray-600 text-lg mb-6">
-                  The foundation of everything. Build operates like a mock
-                  startup where participants function as employees.
+                  Studio operates like a mock startup where participants function as employees, working on long-running, real-world problem statements
                 </p>
               </div>
             </div>
@@ -209,8 +209,8 @@ export function HomePage() {
               <div>
                 <h4 className="font-semibold mb-2">Commitment</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• ~45 minutes on weekdays</li>
-                  <li>• ~1.5 hours on Saturdays</li>
+                  <li>• 45 minutes on weekdays</li>
+                  <li>• 1.5 hours on Saturdays</li>
                   <li>• Real work, real feedback, real growth</li>
                   <li>• Early redirection when needed</li>
                 </ul>
@@ -222,7 +222,7 @@ export function HomePage() {
               onClick={handleUseCaseClick("/training")}
               className="inline-flex items-center gap-2 text-[#FC7802] hover:gap-3 transition-all"
             >
-              Learn how Prodalign Build works
+              Learn how Prodalign Studio works
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
@@ -248,8 +248,7 @@ export function HomePage() {
               <div>
                 <h3 className="text-3xl mb-3">Prodalign Board</h3>
                 <p className="text-gray-600 text-lg mb-6">
-                  Selective and aspirational. For individuals showing strong
-                  vision and founder potential.
+                  For individuals that have a business idea and want to build it.
                 </p>
               </div>
             </div>
@@ -309,8 +308,7 @@ export function HomePage() {
               <div>
                 <h3 className="text-3xl mb-3">Prodalign Partner</h3>
                 <p className="text-gray-600 text-lg mb-6">
-                  A structured way for companies to collaborate with student
-                  teams—guided, mentored, and low risk.
+                  A structured way for companies to collaborate with student teams. Guided, mentored, and low risk.
                 </p>
               </div>
             </div>
@@ -319,7 +317,7 @@ export function HomePage() {
               <div>
                 <h4 className="font-semibold mb-2">What It Is</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Not outsourcing—mentored collaboration</li>
+                  <li>• Mentored collaboration; Not Outsourcing</li>
                   <li>• Prodalign forms, trains, and oversees teams</li>
                   <li>• Companies provide problems, not management</li>
                   <li>• Ideal for exploratory, non-critical work</li>
@@ -348,28 +346,6 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* Closing Section */}
-      <section className="py-24 px-6 lg:px-12 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <h2 className="text-4xl md:text-5xl mb-8">The Ecosystem Outcome</h2>
-            <div className="space-y-4 text-xl text-gray-600">
-              <p>Some people grow into strong engineers.</p>
-              <p>Some grow into leaders.</p>
-              <p>A few grow into founders.</p>
-            </div>
-            <p className="text-2xl text-gray-900 pt-8">
-              Prodalign exists to support all of them—without forcing outcomes.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-24 px-6 lg:px-12 bg-[#FC7802] text-white">
         <motion.div
@@ -380,7 +356,7 @@ export function HomePage() {
         >
           <h2 className="text-4xl md:text-5xl mb-6">Ready to Get Started?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Whether you're exploring, hiring, or building—we'd love to talk.
+            Whether you're exploring, hiring, or building, we'd love to talk.
           </p>
           <Link
             to="/contact"
