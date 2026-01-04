@@ -41,7 +41,7 @@ export function StudioPage() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h1 className="mb-4 text-4xl">Prodalign Studio</h1>
+          <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl">Prodalign Studio</h1>
           <p className="text-xl text-gray-500 mb-6">
             The foundation of the Prodalign ecosystem
           </p>
@@ -91,7 +91,7 @@ export function StudioPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">
+          <h2 className="text-3xl md:text-4xl mb-8">
             What is Prodalign Studio?
           </h2>
 
@@ -155,7 +155,7 @@ export function StudioPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">
+          <h2 className="text-3xl md:text-4xl mb-8">
             Who is Prodalign Studio for?
           </h2>
 
@@ -217,7 +217,7 @@ export function StudioPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">
+          <h2 className="text-3xl md:text-4xl mb-8">
             What we expect from you
           </h2>
 
@@ -352,7 +352,7 @@ export function StudioPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-12">
+          <h2 className="text-3xl md:text-4xl mb-12">
             How Prodalign Studio works
           </h2>
 
@@ -551,7 +551,7 @@ export function StudioPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-8">
+          <h2 className="text-3xl md:text-4xl mb-8">
             What you gain from Studio
           </h2>
 
@@ -626,7 +626,7 @@ export function StudioPage() {
           className="mb-24"
         >
           <div className="border-2 border-gray-300 p-10 md:p-12 rounded-lg">
-            <h2 className="text-4xl mb-8">
+            <h2 className="text-3xl md:text-4xl mb-8">
               This isn't for everyone
             </h2>
 
@@ -681,7 +681,7 @@ export function StudioPage() {
           transition={{ duration: 0.8 }}
           className="text-center border-t-2 border-gray-200 pt-16"
         >
-          <h2 className="text-4xl mb-6">Ready to explore?</h2>
+          <h2 className="text-3xl md:text-4xl mb-6">Ready to explore?</h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
             Whether you're a student trying to understand real
             work, a company exploring collaboration, or someone

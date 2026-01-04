@@ -42,7 +42,7 @@ export function BoardPage() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h1 className="mb-4 text-4xl">Prodalign Board</h1>
+          <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl">Prodalign Board</h1>
           <p className="text-xl text-gray-500 mb-6">
             Guidance, structure, and experienced perspective for first-time
             founders.
@@ -91,7 +91,7 @@ export function BoardPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">What is Board?</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">What is Board?</h2>
 
           <div className="space-y-4 text-gray-700 mb-8">
             <p>
@@ -159,7 +159,7 @@ export function BoardPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">Who is Board for?</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Who is Board for?</h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-gray-50 p-8 rounded-lg">
@@ -230,7 +230,7 @@ export function BoardPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">What Board offers</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">What Board offers</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white border-2 border-gray-200 p-8 rounded-lg">
@@ -286,7 +286,7 @@ export function BoardPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-10">What Board takes</h2>
+          <h2 className="text-3xl md:text-4xl mb-10">What Board takes</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg border border-gray-200">
@@ -359,7 +359,7 @@ export function BoardPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-12">How Board works</h2>
+          <h2 className="text-3xl md:text-4xl mb-12">How Board works</h2>
 
           <div className="space-y-6">
             {/* Step 1 */}
@@ -450,7 +450,7 @@ export function BoardPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-white border-2 border-gray-200 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-8">Possible pathways</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Possible pathways</h2>
 
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -514,7 +514,7 @@ export function BoardPage() {
           className="mb-24"
         >
           <div className="border-2 border-gray-300 p-10 md:p-12 rounded-lg">
-            <h2 className="text-4xl mb-8">Who Board is not for</h2>
+            <h2 className="text-3xl md:text-4xl mb-8">Who Board is not for</h2>
 
             <div className="space-y-6">
               <p className="text-gray-700">
@@ -559,7 +559,7 @@ export function BoardPage() {
           className="text-center border-t-2 border-gray-200 pt-16"
         >
           <div className="max-w-3xl mx-auto mb-10">
-            <h2 className="text-4xl mb-6">
+            <h2 className="text-3xl md:text-4xl mb-6">
               Building a company takes years; not weeks.
             </h2>
             <p className="text-xl text-gray-600 mb-4">

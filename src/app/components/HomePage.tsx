@@ -47,23 +47,21 @@ export function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-3xl md:text-4xl lg:text-5xl mb-4"
+            className="text-5xl md:text-6xl lg:text-7xl mb-6"
           >
-            Helping individuals build structure 
-            <br />
-            to create meaningful products.
-            
+            {/* Helping individuals build structure to create meaningful products. */}
+            Potential <span className="">⇒</span> Products
           </motion.h1>
 
-           <motion.p
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-sm md:text-md lg:text-lg mb-6"
           >
-            From talent to teams, teams to operators, and operators to founders.
+            Prodalign helps people discover what they’re good at, build real
+            capability, and in some cases, start companies.
           </motion.p>
-
 
           <motion.button
             initial={{ opacity: 0, y: 20 }}
@@ -99,7 +97,7 @@ export function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl mb-6">
+            <h2 className="text-3xl md:text-4xl mb-6">
               People don't start at the same place. And that's okay.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -159,12 +157,12 @@ export function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl mb-6">
+            <h2 className="text-3xl md:text-4xl mb-6">
               One System. Three Layers.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Prodalign is a single ecosystem with multiple layers.
-              Everyone enters through the same foundation.
+              Prodalign is a single ecosystem with multiple layers. Everyone
+              enters through the same foundation.
             </p>
           </motion.div>
 
@@ -189,7 +187,9 @@ export function HomePage() {
               <div>
                 <h3 className="text-3xl mb-3">Prodalign Studio</h3>
                 <p className="text-gray-600 text-lg mb-6">
-                  Studio operates like a mock startup where participants function as employees, working on long-running, real-world problem statements
+                  Studio operates like a mock startup where participants
+                  function as employees, working on long-running, real-world
+                  problem statements
                 </p>
               </div>
             </div>
@@ -248,7 +248,8 @@ export function HomePage() {
               <div>
                 <h3 className="text-3xl mb-3">Prodalign Board</h3>
                 <p className="text-gray-600 text-lg mb-6">
-                  For individuals that have a business idea and want to build it.
+                  For individuals that have a business idea and want to build
+                  it.
                 </p>
               </div>
             </div>
@@ -308,7 +309,8 @@ export function HomePage() {
               <div>
                 <h3 className="text-3xl mb-3">Prodalign Partner</h3>
                 <p className="text-gray-600 text-lg mb-6">
-                  A structured way for companies to collaborate with student teams. Guided, mentored, and low risk.
+                  A structured way for companies to collaborate with student
+                  teams. Guided, mentored, and low risk.
                 </p>
               </div>
             </div>

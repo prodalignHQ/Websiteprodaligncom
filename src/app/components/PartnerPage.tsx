@@ -44,7 +44,7 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h1 className="mb-4 text-4xl">Prodalign Partner</h1>
+          <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl">Prodalign Partner</h1>
           <p className="text-xl text-gray-500 mb-6">
             A structured way for companies to collaborate with student teams.
             Guided, mentored, and low risk
@@ -94,7 +94,7 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">What is a Prodalign Partner?</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">What is a Prodalign Partner?</h2>
 
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-8">
             <p className="text text-gray-700 mb-6">
@@ -150,7 +150,7 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">Eligibility to become a Partner</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Eligibility to become a Partner</h2>
 
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-6">
             <p className="text-gray-700 mb-6">
@@ -229,7 +229,7 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">What a Partner needs to give</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">What a Partner needs to give</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Problem Definition */}
@@ -314,7 +314,7 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-10">What a Partner gets</h2>
+          <h2 className="text-3xl md:text-4xl mb-10">What a Partner gets</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -445,7 +445,7 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">Who Partner is not for</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Who Partner is not for</h2>
 
           <div className="bg-gray-50 p-8 md:p-10 rounded-lg">
             <p className="text-gray-700 mb-6">
@@ -512,7 +512,7 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-8">Why companies choose Prodalign</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Why companies choose Prodalign</h2>
 
           <div className="space-y-4">
             <div className="flex items-start gap-4">
@@ -561,9 +561,9 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="text-center border-t border-gray-200 pt-12"
         >
-          <h2 className="text-3xl mb-4">
-            Prodalign Partner isn't about speed or scale.
-          </h2>
+            <h2 className="text-2xl md:text-3xl mb-4">
+              Prodalign Partner isn't about speed or scale.
+            </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             It's about building trust, slowly and deliberately. If your company
             values thoughtful execution and long-term talent growth, we're open

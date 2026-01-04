@@ -41,7 +41,7 @@ export function ContactPage() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-6xl mb-6">Let's Talk</h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6">Let's Talk</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Whether you're exploring, hiring, or building, we'd love to talk.
           </p>
