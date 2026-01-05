@@ -431,7 +431,7 @@ export function BoardPage() {
                   5
                 </div>
               </div>
-              <div className="flex-1 pt-1 bg-[#FC7802]/5 p-6 rounded-lg -ml-6 pl-12">
+              <div className="flex-1 pt-1 bg-[#FC7802]/5 p-6 rounded-lg -ml-6">
                 <h3 className="text-xl mb-2">Guided Execution</h3>
                 <p className="text-gray-600">
                   You work independently while receiving structured guidance
