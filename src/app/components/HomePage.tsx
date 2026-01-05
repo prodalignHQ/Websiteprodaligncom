@@ -26,7 +26,7 @@ export function HomePage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-7xl mx-auto text-center"
         >
           <div className="flex justify-center mb-12">
             <motion.div
@@ -47,19 +47,20 @@ export function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-6xl lg:text-7xl mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6"
           >
             {/* Helping individuals build structure to create meaningful products. */}
             {/* Potential <span className="">⇒</span> Products */}
-            Real problems <span className="text-3xl align-middle text-[#FC7802]">✦</span> Real builders <span className="text-3xl align-middle text-[#FC7802]">✦</span> Real outcomes <span className="text-3xl align-middle text-[#FC7802]">✦</span>
+            Real Capability, <span className="whitespace-nowrap">Infinite Outcomes</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-sm md:text-md lg:text-lg mb-6"
+            className="text-xl md:text-md lg:text-lg mb-6 max-w-3xl mx-auto"
           >
+            {/* text-xl text-gray-600 max-w-3xl mx-auto */}
             Prodalign helps people discover what they’re good at, build real
             capability, and in some cases, start companies.
           </motion.p>
@@ -370,6 +371,6 @@ export function HomePage() {
           </Link>
         </motion.div>
       </section>
-    </div>
+    </div >
   );
 }
