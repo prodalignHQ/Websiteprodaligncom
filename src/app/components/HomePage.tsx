@@ -182,18 +182,18 @@ export function HomePage() {
                 Ideal for students in colleges
               </span>
             </div>
-            <div className="flex items-start gap-6 mb-6">
-              <div className="w-16 h-16 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl text-[#FC7802]">01</span>
+            <div className="mb-6">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl text-[#FC7802]">01</span>
+                </div>
+                <h3 className="text-3xl">Prodalign Studio</h3>
               </div>
-              <div>
-                <h3 className="text-3xl mb-3">Prodalign Studio</h3>
-                <p className="text-gray-600 text-lg mb-6">
-                  Studio operates like a mock startup where participants
-                  function as employees, working on long-running, real-world
-                  problem statements
-                </p>
-              </div>
+              <p className="text-gray-600 text-lg">
+                Studio operates like a mock startup where participants
+                function as employees, working on long-running, real-world
+                problem statements
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -243,17 +243,17 @@ export function HomePage() {
                 1st-Time Founders, &lt; 30y
               </span>
             </div>
-            <div className="flex items-start gap-6 mb-6">
-              <div className="w-16 h-16 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl text-[#FC7802]">02</span>
+            <div className="mb-6">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl text-[#FC7802]">02</span>
+                </div>
+                <h3 className="text-3xl">Prodalign Board</h3>
               </div>
-              <div>
-                <h3 className="text-3xl mb-3">Prodalign Board</h3>
-                <p className="text-gray-600 text-lg mb-6">
-                  For individuals that have a business idea and want to build
-                  it.
-                </p>
-              </div>
+              <p className="text-gray-600 text-lg">
+                For individuals that have a business idea and want to build
+                it.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -304,17 +304,17 @@ export function HomePage() {
                 For companies
               </span>
             </div>
-            <div className="flex items-start gap-6 mb-6">
-              <div className="w-16 h-16 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl text-[#FC7802]">03</span>
+            <div className="mb-6">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="w-12 h-12 rounded-full bg-[#FC7802]/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl text-[#FC7802]">03</span>
+                </div>
+                <h3 className="text-3xl">Prodalign Partner</h3>
               </div>
-              <div>
-                <h3 className="text-3xl mb-3">Prodalign Partner</h3>
-                <p className="text-gray-600 text-lg mb-6">
-                  A structured way for companies to collaborate with student
-                  teams. Guided, mentored, and low risk.
-                </p>
-              </div>
+              <p className="text-gray-600 text-lg">
+                A structured way for companies to collaborate with student
+                teams. Guided, mentored, and low risk.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
