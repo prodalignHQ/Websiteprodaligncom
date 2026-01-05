@@ -21,7 +21,7 @@ export function Footer() {
                 Prodalign
               </span>
             </Link>
-            <div className="flex items-center gap-2 text-gray-600">
+            {/* <div className="flex items-center gap-2 text-gray-600">
               <Mail className="w-4 h-4" />
               <a
                 href="mailto:talk@prodalign.com"
@@ -29,7 +29,7 @@ export function Footer() {
               >
                 talk@prodalign.com
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Sitemap - Main */}

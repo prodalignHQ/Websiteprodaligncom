@@ -50,7 +50,8 @@ export function HomePage() {
             className="text-5xl md:text-6xl lg:text-7xl mb-6"
           >
             {/* Helping individuals build structure to create meaningful products. */}
-            Potential <span className="">⇒</span> Products
+            {/* Potential <span className="">⇒</span> Products */}
+            Real problems <span className="text-3xl align-middle text-[#FC7802]">✦</span> Real builders <span className="text-3xl align-middle text-[#FC7802]">✦</span> Real outcomes <span className="text-3xl align-middle text-[#FC7802]">✦</span>
           </motion.h1>
 
           <motion.p
